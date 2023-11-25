@@ -1,0 +1,10 @@
+dot:
+  yml:
+    dotyml : true
+
+p2p:
+  bootstrappers:
+    - /ip4/8.140.247.159/tcp/8011/p2p/QmUNaruC7WfHNLeFNH2CUPBWLVPzjDg5shj2zs9nGaajSL
+    - /ip4/40.81.205.197/tcp/8011/p2p/AmUNaruC7WfHNLeFNH2CUPBWLVPzjDg5shj2zs9nGaajSL
+    - /ip4/20.243.160.34/tcp/8011/p2p/CmUNaruC7WfHNLeFNH2CUPBWLVPzjDg5shj2zs9nGaajSL
+
