@@ -30,7 +30,7 @@ export class DotYml
 				processEnv = {};
 			}
 
-			const mergedObject = _.merge({}, processEnv, ymlConfig, { _dotyml : true } );
+			const mergedObject = _.merge({}, processEnv, ymlConfig, { _deyml : true } );
 			process.env = _.cloneDeep( mergedObject );
 
 			//	...

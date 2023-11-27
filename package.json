@@ -1,6 +1,6 @@
 {
 	"name": "deyml",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "Loads configuration variables from .yml for nodejs projects. by DeNetwork",
 	"main": "dist/index.js",
 	"browser": "dist/index.js",

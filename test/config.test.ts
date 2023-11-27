@@ -30,12 +30,12 @@ describe( "Config Test", () =>
 			//           '/ip4/20.243.160.34/tcp/8011/p2p/CmUNaruC7WfHNLeFNH2CUPBWLVPzjDg5shj2zs9nGaajSL'
 			//         ]
 			//       },
-			//       _dotyml: true
+			//       _deyml: true
 			//    }
 			//
 			expect( process.env ).toBeDefined();
-			expect( process.env ).toHaveProperty( `_dotyml` );
-			expect( process.env._dotyml ).toBeTruthy();
+			expect( process.env ).toHaveProperty( `_deyml` );
+			expect( process.env._deyml ).toBeTruthy();
 
 			expect( process.env ).toHaveProperty( `dot` );
 			expect( _.isObject( process.env.dot ) ).toBeTruthy();
