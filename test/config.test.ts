@@ -22,7 +22,7 @@ describe( "Config Test", () =>
 			//
 			//    {
 			//       ...,
-			//       dot: { yml: { dotyml: true } },
+			//       de: { yml: { deyml: true } },
 			//       p2p: {
 			//         bootstrappers: [
 			//           '/ip4/8.140.247.159/tcp/8011/p2p/QmUNaruC7WfHNLeFNH2CUPBWLVPzjDg5shj2zs9nGaajSL',
@@ -37,14 +37,14 @@ describe( "Config Test", () =>
 			expect( process.env ).toHaveProperty( `_deyml` );
 			expect( process.env._deyml ).toBeTruthy();
 
-			expect( process.env ).toHaveProperty( `dot` );
-			expect( _.isObject( process.env.dot ) ).toBeTruthy();
+			expect( process.env ).toHaveProperty( `de` );
+			expect( _.isObject( process.env.de ) ).toBeTruthy();
 
-			const dotObject : any = { ...process.env.dot as any };
+			const dotObject : any = { ...process.env.de as any };
 			expect( dotObject ).toHaveProperty( 'yml' );
 			expect( _.isObject( dotObject[ `yml` ] ) ).toBeTruthy();
-			expect( dotObject[ `yml` ] ).toHaveProperty( 'dotyml' );
-			expect( dotObject[ `yml` ][ `dotyml` ] ).toBeTruthy();
+			expect( dotObject[ `yml` ] ).toHaveProperty( 'deyml' );
+			expect( dotObject[ `yml` ][ `deyml` ] ).toBeTruthy();
 
 			expect( process.env ).toHaveProperty( `p2p` );
 			expect( process.env.p2p ).toHaveProperty( `bootstrappers` );

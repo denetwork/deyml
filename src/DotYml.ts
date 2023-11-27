@@ -38,7 +38,7 @@ export class DotYml
 		}
 		catch ( err )
 		{
-			console.log( `))) error in dotyml:`, err );
+			console.log( `))) error in deyml:`, err );
 		}
 
 		return false;
